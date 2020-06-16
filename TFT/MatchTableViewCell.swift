@@ -10,197 +10,33 @@ import UIKit
 
 class MatchTableViewCell: UITableViewCell {
     
-    let unitImageView0: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
+    // create unitImageViews
+    var unitImageView0 = UnitImageView(image: nil)
+    var unitImageView1 = UnitImageView(image: nil)
+    var unitImageView2 = UnitImageView(image: nil)
+    var unitImageView3 = UnitImageView(image: nil)
+    var unitImageView4 = UnitImageView(image: nil)
+    var unitImageView5 = UnitImageView(image: nil)
+    var unitImageView6 = UnitImageView(image: nil)
+    var unitImageView7 = UnitImageView(image: nil)
+    var unitImageView8 = UnitImageView(image: nil)
+    var unitImageView9 = UnitImageView(image: nil)
+    var unitImageView10 = UnitImageView(image: nil)
+    var unitImageView11 = UnitImageView(image: nil)
     
-    let unitImageView1: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView2: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView3: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView4: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView5: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView6: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView7: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView8: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView9: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView10: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let unitImageView11: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-    
-    let starImageView0: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-    
-    let starImageView1: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView2: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView3: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView4: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView5: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView6: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView7: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView8: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView9: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView10: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let starImageView11: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 42).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
+    // create starImageView
+    var starImageView0 = StarImageVIew(image: nil)
+    var starImageView1 = StarImageVIew(image: nil)
+    var starImageView2 = StarImageVIew(image: nil)
+    var starImageView3 = StarImageVIew(image: nil)
+    var starImageView4 = StarImageVIew(image: nil)
+    var starImageView5 = StarImageVIew(image: nil)
+    var starImageView6 = StarImageVIew(image: nil)
+    var starImageView7 = StarImageVIew(image: nil)
+    var starImageView8 = StarImageVIew(image: nil)
+    var starImageView9 = StarImageVIew(image: nil)
+    var starImageView10 = StarImageVIew(image: nil)
+    var starImageView11 = StarImageVIew(image: nil)
     
     let stackView1: UIStackView = {
         let sv = UIStackView()
@@ -240,294 +76,45 @@ class MatchTableViewCell: UITableViewCell {
         return pl
     }()
     
-    let itemsImageView0: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
+    // create itemsImageViews
+    var itemsImageView0 = ItemImageView(image: nil)
+    var itemsImageView1 = ItemImageView(image: nil)
+    var itemsImageView2 = ItemImageView(image: nil)
+    var itemsImageView3 = ItemImageView(image: nil)
+    var itemsImageView4 = ItemImageView(image: nil)
+    var itemsImageView5 = ItemImageView(image: nil)
+    var itemsImageView6 = ItemImageView(image: nil)
+    var itemsImageView7 = ItemImageView(image: nil)
+    var itemsImageView8 = ItemImageView(image: nil)
+    var itemsImageView9 = ItemImageView(image: nil)
+    var itemsImageView10 = ItemImageView(image: nil)
+    var itemsImageView11 = ItemImageView(image: nil)
+    var itemsImageView12 = ItemImageView(image: nil)
+    var itemsImageView13 = ItemImageView(image: nil)
+    var itemsImageView14 = ItemImageView(image: nil)
+    var itemsImageView15 = ItemImageView(image: nil)
+    var itemsImageView16 = ItemImageView(image: nil)
+    var itemsImageView17 = ItemImageView(image: nil)
+    var itemsImageView18 = ItemImageView(image: nil)
+    var itemsImageView19 = ItemImageView(image: nil)
+    var itemsImageView20 = ItemImageView(image: nil)
+    var itemsImageView21 = ItemImageView(image: nil)
+    var itemsImageView22 = ItemImageView(image: nil)
+    var itemsImageView23 = ItemImageView(image: nil)
+    var itemsImageView24 = ItemImageView(image: nil)
+    var itemsImageView25 = ItemImageView(image: nil)
+    var itemsImageView26 = ItemImageView(image: nil)
+    var itemsImageView27 = ItemImageView(image: nil)
+    var itemsImageView28 = ItemImageView(image: nil)
+    var itemsImageView29 = ItemImageView(image: nil)
+    var itemsImageView30 = ItemImageView(image: nil)
+    var itemsImageView31 = ItemImageView(image: nil)
+    var itemsImageView32 = ItemImageView(image: nil)
+    var itemsImageView33 = ItemImageView(image: nil)
+    var itemsImageView34 = ItemImageView(image: nil)
+    var itemsImageView35 = ItemImageView(image: nil)
     
-    let itemsImageView1: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-    
-    let itemsImageView2: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-    
-    let itemsImageView3: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView4: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView5: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView6: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView7: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView8: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView9: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView10: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView11: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView12: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView13: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView14: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView15: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView16: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView17: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView18: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView19: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView20: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView21: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView22: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView23: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView24: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView25: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView26: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView27: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView28: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView29: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView30: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView31: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView32: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView33: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView34: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-
-    let itemsImageView35: UIImageView = {
-        let iv = UIImageView()
-        iv.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.widthAnchor.constraint(equalToConstant: 13).isActive = true
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
-    }()
-    
+    // create unitStackView
     let unitStackView0: UIStackView = {
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
@@ -648,6 +235,7 @@ class MatchTableViewCell: UITableViewCell {
         return sv
     }()
     
+    // create itemStackVIew
     let itemStackView0: UIStackView = {
         let tv = UIStackView()
         tv.translatesAutoresizingMaskIntoConstraints = false

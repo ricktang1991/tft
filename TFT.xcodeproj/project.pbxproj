@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		042FE49724968FC1007FC617 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FE49624968FC1007FC617 /* MatchTableViewCell.swift */; };
 		042FE4AD2497E22B007FC617 /* set3 in Resources */ = {isa = PBXBuildFile; fileRef = 042FE4AC2497E22B007FC617 /* set3 */; };
+		042FE4B124996498007FC617 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FE4B024996498007FC617 /* TestViewController.swift */; };
+		042FE4B524997A3A007FC617 /* UnitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FE4B424997A3A007FC617 /* UnitImageView.swift */; };
+		042FE4B724997D1A007FC617 /* ItemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FE4B624997D1A007FC617 /* ItemImageView.swift */; };
+		042FE4B924997F18007FC617 /* StarImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FE4B824997F18007FC617 /* StarImageVIew.swift */; };
 		0457B196249502FE00620DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457B195249502FE00620DBE /* AppDelegate.swift */; };
 		0457B198249502FE00620DBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457B197249502FE00620DBE /* SceneDelegate.swift */; };
 		0457B19A249502FE00620DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457B199249502FE00620DBE /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		042FE49624968FC1007FC617 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		042FE4AC2497E22B007FC617 /* set3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = set3; sourceTree = "<group>"; };
+		042FE4B024996498007FC617 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		042FE4B424997A3A007FC617 /* UnitImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitImageView.swift; sourceTree = "<group>"; };
+		042FE4B624997D1A007FC617 /* ItemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageView.swift; sourceTree = "<group>"; };
+		042FE4B824997F18007FC617 /* StarImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarImageVIew.swift; sourceTree = "<group>"; };
 		0457B192249502FE00620DBE /* TFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457B195249502FE00620DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0457B197249502FE00620DBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +80,10 @@
 				0457B1AD24953DF300620DBE /* MatchHistoryRequest.swift */,
 				042FE49624968FC1007FC617 /* MatchTableViewCell.swift */,
 				042FE4AC2497E22B007FC617 /* set3 */,
+				042FE4B024996498007FC617 /* TestViewController.swift */,
+				042FE4B424997A3A007FC617 /* UnitImageView.swift */,
+				042FE4B624997D1A007FC617 /* ItemImageView.swift */,
+				042FE4B824997F18007FC617 /* StarImageVIew.swift */,
 			);
 			path = TFT;
 			sourceTree = "<group>";
@@ -147,11 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042FE4B924997F18007FC617 /* StarImageVIew.swift in Sources */,
+				042FE4B124996498007FC617 /* TestViewController.swift in Sources */,
 				0457B1AE24953DF300620DBE /* MatchHistoryRequest.swift in Sources */,
 				042FE49724968FC1007FC617 /* MatchTableViewCell.swift in Sources */,
 				0457B19A249502FE00620DBE /* ViewController.swift in Sources */,
+				042FE4B524997A3A007FC617 /* UnitImageView.swift in Sources */,
 				0457B1B024953EA300620DBE /* MatchHistory.swift in Sources */,
 				0457B196249502FE00620DBE /* AppDelegate.swift in Sources */,
+				042FE4B724997D1A007FC617 /* ItemImageView.swift in Sources */,
 				0457B198249502FE00620DBE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
