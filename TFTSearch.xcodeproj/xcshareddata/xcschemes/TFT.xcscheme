@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0457B191249502FE00620DBE"
-               BuildableName = "TFT Search.app"
+               BuildableName = "TFTSearch.app"
                BlueprintName = "TFTSearch"
                ReferencedContainer = "container:TFTSearch.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0457B191249502FE00620DBE"
-            BuildableName = "TFT Search.app"
+            BuildableName = "TFTSearch.app"
             BlueprintName = "TFTSearch"
             ReferencedContainer = "container:TFTSearch.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0457B191249502FE00620DBE"
-            BuildableName = "TFT Search.app"
+            BuildableName = "TFTSearch.app"
             BlueprintName = "TFTSearch"
             ReferencedContainer = "container:TFTSearch.xcodeproj">
          </BuildableReference>
