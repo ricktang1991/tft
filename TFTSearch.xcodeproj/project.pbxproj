@@ -38,7 +38,7 @@
 		042FE4C0249AAC99007FC617 /* Traits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traits.swift; sourceTree = "<group>"; };
 		042FE52624B03722007FC617 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		042FE52A24B447BB007FC617 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		0457B192249502FE00620DBE /* TFT Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TFT Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0457B192249502FE00620DBE /* TFTSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFTSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457B195249502FE00620DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0457B197249502FE00620DBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0457B199249502FE00620DBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		0457B193249502FE00620DBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0457B192249502FE00620DBE /* TFT Search.app */,
+				0457B192249502FE00620DBE /* TFTSearch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0457B191249502FE00620DBE /* TFT */ = {
+		0457B191249502FE00620DBE /* TFTSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0457B1A62495030200620DBE /* Build configuration list for PBXNativeTarget "TFT" */;
+			buildConfigurationList = 0457B1A62495030200620DBE /* Build configuration list for PBXNativeTarget "TFTSearch" */;
 			buildPhases = (
 				0457B18E249502FE00620DBE /* Sources */,
 				0457B18F249502FE00620DBE /* Frameworks */,
@@ -129,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = TFT;
+			name = TFTSearch;
 			productName = TFT;
-			productReference = 0457B192249502FE00620DBE /* TFT Search.app */;
+			productReference = 0457B192249502FE00620DBE /* TFTSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0457B18D249502FE00620DBE /* Build configuration list for PBXProject "TFT" */;
+			buildConfigurationList = 0457B18D249502FE00620DBE /* Build configuration list for PBXProject "TFTSearch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -162,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0457B191249502FE00620DBE /* TFT */,
+				0457B191249502FE00620DBE /* TFTSearch */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Rick.TFTSearch;
-				PRODUCT_NAME = "TFT Search";
+				PRODUCT_NAME = TFTSearch;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Rick.TFTSearch;
-				PRODUCT_NAME = "TFT Search";
+				PRODUCT_NAME = TFTSearch;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0457B18D249502FE00620DBE /* Build configuration list for PBXProject "TFT" */ = {
+		0457B18D249502FE00620DBE /* Build configuration list for PBXProject "TFTSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0457B1A42495030200620DBE /* Debug */,
@@ -380,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0457B1A62495030200620DBE /* Build configuration list for PBXNativeTarget "TFT" */ = {
+		0457B1A62495030200620DBE /* Build configuration list for PBXNativeTarget "TFTSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0457B1A72495030200620DBE /* Debug */,
