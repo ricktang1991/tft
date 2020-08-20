@@ -38,6 +38,15 @@ class MatchTableViewCell: UITableViewCell {
     var starImageView10 = StarImageVIew(image: nil)
     var starImageView11 = StarImageVIew(image: nil)
     
+    let stackView: UIStackView = {
+        let sv = UIStackView()
+        sv.translatesAutoresizingMaskIntoConstraints = false
+        sv.axis = .vertical
+        sv.alignment = .center
+        sv.distribution = .fillEqually
+        return sv
+    }()
+    
     let stackView1: UIStackView = {
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
@@ -58,12 +67,13 @@ class MatchTableViewCell: UITableViewCell {
         return sv
     }()
     
-    let stackView: UIStackView = {
+    let traitStackView: UIStackView = {
         let sv = UIStackView()
         sv.translatesAutoresizingMaskIntoConstraints = false
-        sv.axis = .vertical
+        sv.axis = .horizontal
         sv.alignment = .center
-        sv.distribution = .fillEqually
+        sv.distribution = .equalCentering
+        sv.spacing = 10
         return sv
     }()
     
@@ -355,11 +365,64 @@ class MatchTableViewCell: UITableViewCell {
         return tv
     }()
     
+    let infoStackView: UIStackView = {
+        let tv = UIStackView()
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        tv.axis = .horizontal
+        tv.alignment = .center
+        tv.distribution = .equalSpacing
+        return tv
+    }()
+    
+    let matchType: UILabel = {
+        let ul = UILabel()
+        ul.translatesAutoresizingMaskIntoConstraints = false
+        ul.font = ul.font.withSize(15)
+        return ul
+    }()
+    
+    let gameLength: UILabel = {
+        let ul = UILabel()
+        ul.translatesAutoresizingMaskIntoConstraints = false
+        ul.font = ul.font.withSize(15)
+        return ul
+    }()
+    
+    let gameDate: UILabel = {
+        let ul = UILabel()
+        ul.translatesAutoresizingMaskIntoConstraints = false
+        ul.font = ul.font.withSize(15)
+        return ul
+    }()
+    
+    let gameVariation: UILabel = {
+        let ul = UILabel()
+        ul.translatesAutoresizingMaskIntoConstraints = false
+        ul.font = ul.font.withSize(15)
+        return ul
+    }()
+    
+    let traitImageView0 = TraitImageView(image: nil)
+    let traitImageView1 = TraitImageView(image: nil)
+    let traitImageView2 = TraitImageView(image: nil)
+    let traitImageView3 = TraitImageView(image: nil)
+    let traitImageView4 = TraitImageView(image: nil)
+    let traitImageView5 = TraitImageView(image: nil)
+    let traitImageView6 = TraitImageView(image: nil)
+    let traitImageView7 = TraitImageView(image: nil)
+    let traitImageView8 = TraitImageView(image: nil)
+    let traitImageView9 = TraitImageView(image: nil)
+    
     var imageViews = [UIImageView]()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-    
+        
+        self.contentView.layer.masksToBounds = true
+        self.contentView.clipsToBounds = true
+        
+        contentView.addSubview(infoStackView)
+        contentView.addSubview(traitStackView)
         contentView.addSubview(stackView)
         contentView.addSubview(placementLabel)
         
@@ -462,9 +525,30 @@ class MatchTableViewCell: UITableViewCell {
         stackView2.addArrangedSubview(unitStackView9)
         stackView2.addArrangedSubview(unitStackView10)
         stackView2.addArrangedSubview(unitStackView11)
+        traitStackView.addArrangedSubview(traitImageView0)
+        traitStackView.addArrangedSubview(traitImageView1)
+        traitStackView.addArrangedSubview(traitImageView2)
+        traitStackView.addArrangedSubview(traitImageView3)
+        traitStackView.addArrangedSubview(traitImageView4)
+        traitStackView.addArrangedSubview(traitImageView5)
+        traitStackView.addArrangedSubview(traitImageView6)
+        traitStackView.addArrangedSubview(traitImageView7)
+        traitStackView.addArrangedSubview(traitImageView8)
+        infoStackView.addArrangedSubview(matchType)
+        infoStackView.addArrangedSubview(gameLength)
+        infoStackView.addArrangedSubview(gameDate)
+        infoStackView.addArrangedSubview(gameVariation)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30),
+            infoStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5),
+            infoStackView.leadingAnchor.constraint(equalTo: placementLabel.trailingAnchor, constant: 10),
+            infoStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -200),
+            
+            traitStackView.topAnchor.constraint(equalTo: infoStackView.bottomAnchor, constant: 5),
+            traitStackView.leadingAnchor.constraint(equalTo: placementLabel.trailingAnchor, constant: 10),
+            traitStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            
+            stackView.topAnchor.constraint(equalTo: traitStackView.bottomAnchor, constant: 5),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -5),
             stackView.leadingAnchor.constraint(equalTo: placementLabel.trailingAnchor, constant: 10),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),

@@ -8,28 +8,29 @@
 
 import Foundation
 
-// Summoner struct
 struct Summoner: Decodable {
     var puuid: String
     var name: String
     var summonerLevel: Int
 }
 
-
-
-// Match detail struct
 struct Match: Decodable {
     var metadata: MetaData
     var info: Info
 }
 
 struct MetaData: Decodable {
+    var data_version: String
+    var match_id: String
     var participants: [String]
 }
 
 struct Info: Decodable {
-    var game_datetime: CLong
+    var game_datetime: Double
+    var game_variation: String
     var participants: [Participant]
+    var queue_id: Int
+    var tft_set_number: Int
 }
 
 struct Participant: Decodable {
@@ -38,6 +39,7 @@ struct Participant: Decodable {
     var level: Int
     var placement: Int
     var puuid: String
+    var time_eliminated: Float64
     var total_damage_to_players: Int
     var traits: [Trait]
     var units: [Unit]
@@ -46,6 +48,7 @@ struct Participant: Decodable {
 struct Trait: Decodable {
     var name: String
     var num_units: Int
+    var style: Int
     var tier_current: Int
     var tier_total: Int?
 }
