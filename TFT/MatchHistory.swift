@@ -15,19 +15,18 @@ struct Summoner: Decodable {
 }
 
 struct Match: Decodable {
-    var metadata: MetaData
-    var info: Info
+    var metadata: MetadataDto
+    var info: InfoDto
 }
 
-struct MetaData: Decodable {
+struct MetadataDto: Decodable {
     var data_version: String
     var match_id: String
     var participants: [String]
 }
 
-struct Info: Decodable {
+struct InfoDto: Decodable {
     var game_datetime: Double
-    var game_variation: String
     var participants: [Participant]
     var queue_id: Int
     var tft_set_number: Int

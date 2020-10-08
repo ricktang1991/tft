@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
-    var setNumber = 3
+    var setNumber = 4
     
     var summonerInfo: Summoner?
     

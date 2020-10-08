@@ -26,7 +26,7 @@ extension Traits {
         guard
             let url = Bundle.main.url(forResource: "traits", withExtension: "json"),
             let data = try? Data(contentsOf: url)
-            else { print("1"); return [] }
+            else { return [] }
 
         do {
             return try JSONDecoder().decode([Traits].self, from: data)
