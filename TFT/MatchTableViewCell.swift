@@ -541,11 +541,11 @@ class MatchTableViewCell: UITableViewCell {
         
         NSLayoutConstraint.activate([
             infoStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5),
-            infoStackView.leadingAnchor.constraint(equalTo: placementLabel.trailingAnchor, constant: 10),
+            infoStackView.leadingAnchor.constraint(equalTo: placementLabel.trailingAnchor, constant: 40),
             infoStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -200),
             
             traitStackView.topAnchor.constraint(equalTo: infoStackView.bottomAnchor, constant: 5),
-            traitStackView.leadingAnchor.constraint(equalTo: placementLabel.trailingAnchor, constant: 10),
+            traitStackView.leadingAnchor.constraint(equalTo: placementLabel.trailingAnchor, constant: 40),
             traitStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             
             stackView.topAnchor.constraint(equalTo: traitStackView.bottomAnchor, constant: 5),

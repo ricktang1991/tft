@@ -24,6 +24,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
+        overrideUserInterfaceStyle = .light
+        navigationItem.title = "Match Detail"
         tableView.rowHeight = 200
         tableView.delegate = self
         tableView.dataSource = self

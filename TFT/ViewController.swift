@@ -62,6 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         view.backgroundColor = .systemBlue
         navigationController?.navigationBar.barTintColor = .systemBlue
         navigationController?.navigationBar.tintColor = .white
